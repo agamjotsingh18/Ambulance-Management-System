@@ -1,13 +1,14 @@
 <?php
 require ("assets/common.php");
+session_start();
+require ("assets/bootstrap_cdn.php");
 $email = $_POST['email'];
 $email = mysqli_real_escape_string($con,$email);
 $password = $_POST['password'];
 $password = mysqli_real_escape_string($con,$password);
-$password = md5($password);
 
 $query = "SELECT id,email FROM users WHERE email = '".$email."' AND password = '".$password."'";
-$result = mysqli_query($con,$query);
+$result = mysqli_query($con,$query) or die(mysqli_error($query));
 $num = mysqli_num_rows($result);
 
 if($num == 0){
