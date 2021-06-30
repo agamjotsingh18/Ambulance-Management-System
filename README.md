@@ -1,2 +1,2 @@
 # Ambulance-Management-System
-Ambulance Management System Made by us for Hackathons and to boost our Resumes.
+This is a project to manage ambulances . It has three portals admin, user and driver portal. the Admin portal will verify the driver details and update the drivers list, the User portal will be getting all the verified ambulance driver details  and their availabilities and Driver portal will able to register them and this project will also put SMS to user when the ambulance is booked through Backend. This is a Big Scale Project, everyone will be able to register themselves
